@@ -1,0 +1,118 @@
+/* Estilo básico do menu */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .menu-principal {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-principal li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu-principal a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+  }
+  
+  /* Estilo do submenu */
+  .submenu {
+    display: none;
+    position: none;
+    background-color: #c0bec4;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .submenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .submenu a {
+    color: rgb(249, 248, 252);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 1px black;
+  } 
+  
+  /* Hover para mostrar o submenu */
+  .menu-principal li {
+    position: relative; /* Contém o submenu posicionado */
+  }
+  
+  .menu-principal li:hover .submenu {
+    display: block;
+    position: absolute; 
+    left: 0; 
+    top: 100%;
+  }
+  /* Estilos básicos */
+nav {
+  background-color: #333; /* Cor de fundo do menu */
+  padding: 10px;
+}
+
+.menu-principal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal li {
+  display: inline-block;
+  margin-right: 20px; /* Espaçamento entre itens */
+}
+
+.menu-principal a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Espaçamento em torno do texto */
+}
+
+/* Estilos para hover */
+.menu-principal li:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+.menu-principal li:hover .submenu {
+  display: block; /* Exibir submenu ao passar o mouse */
+  position: absolute; /* Posicionamento absoluto */
+  left: 100%; /* Posicionar à direita do item principal */
+  top: 0; /* Posicionar no topo do item principal */
+  background-color: #fff; /* Cor de fundo do submenu */
+  padding: 10px;
+  border-radius: 5px; /* Arredondar cantos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilos para submenu */
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu li {
+  margin-bottom: 5px; /* Espaçamento entre subitens */
+}
+
+.submenu a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px; /* Espaçamento em torno do texto */
+}
+
+/* Estilos para hover no submenu */
+.submenu li:hover {
+  background-color: #eee; /* Cor de fundo ao passar o mouse */
+}
+
+  
